@@ -1,0 +1,17 @@
+# backend/identity_service/environment.yml
+name: ecommerce-identity-service
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - fastapi
+  - uvicorn
+  - sqlalchemy
+  - psycopg2
+  - pip
+  - pip:
+      - pyjwt
+      - passlib[bcrypt]
+      - pydantic-settings
+      - aio-pika

@@ -1,0 +1,15 @@
+name: ecommerce-catalog-service
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - fastapi
+  - uvicorn
+  - sqlalchemy
+  - psycopg2
+  - alembic
+  - pip
+  - pip:
+      - pydantic-settings
+      - aio-pika

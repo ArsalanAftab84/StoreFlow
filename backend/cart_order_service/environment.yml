@@ -1,0 +1,16 @@
+name: ecommerce-order-service
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - fastapi
+  - uvicorn
+  - sqlalchemy
+  - psycopg2
+  - redis-py
+  - pip
+  - pip:
+      - pydantic-settings
+      - celery
+      - aio-pika
