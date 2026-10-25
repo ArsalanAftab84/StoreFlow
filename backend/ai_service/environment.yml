@@ -1,0 +1,19 @@
+# backend/ai_service/environment.yml
+name: ecommerce-ai-service
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - fastapi
+  - uvicorn
+  - sqlalchemy
+  - psycopg2
+  - sentence-transformers  # Conda will automatically pull the correct PyTorch binaries
+  - pip
+  - pip:
+      - pgvector
+      - groq
+      - pydantic-settings
+      - aio-pika
